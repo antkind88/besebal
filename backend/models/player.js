@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const playerSchema = new Schema({
-    playername: {
+    playerName: {
         type: String,
         required: true
     },
@@ -56,6 +56,6 @@ const playerSchema = new Schema({
     },
     basePlusSlugging: {
         type: Number
-    }
+    },
 })
 module.exports = mongoose.model("Player", playerSchema, "players")
